@@ -1,0 +1,142 @@
+.signup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    top: 0;
+}
+.signup-form{
+    width: 736px;
+    position: relative;
+    height: 513px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 17px 55px 31px 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.compart-container{
+    display: flex;
+    width: 100%;
+    margin-top: 48px;
+}
+.copocart{
+    margin-right: 20px;
+    width: 50%;
+}
+.copocart1{
+    width: 50%;
+    margin-left: 20px;
+}
+.copocart input{
+    width: 100%;
+    height: 46px;
+    padding: 0px 5px;
+    background: #F7F8FA;
+border: 1px solid #D9D9DB;
+box-sizing: border-box;
+border-radius: 2px 2px 0px 0px;
+}
+.signin-btn{
+    width: 100%;
+    color: white;
+    margin: 15px 0px;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+font-size: 14px;
+    background-color: #2F6CE5;
+    height:40px;
+    border-radius: 20px;
+}
+.head-sign{
+    font-weight: bold;
+    font-size: 24px;
+}
+.close-sign-btn{
+    position: absolute;
+    top: -34px;
+    right: 0;
+}
+.name-input{
+    display: flex;
+}
+.green-content{
+    color: #008A45;
+}
+.mobile-view{
+    display: flex;
+    justify-content: space-between;
+}
+.xyuasd{
+    display: none;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: underline;
+}
+.mobile-resp-text{
+    display: none;
+}
+.google-btn button{
+    width: 100%;
+}
+@media screen and (max-width:800px) {
+    .signup{
+        align-items: flex-end;
+    }
+    .mobile-resp-text{
+        width: 240px;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 12px;
+        display: block;
+        color: black;
+    }
+    .signin-btn{
+        width: 40%;
+    }
+    .green-content{
+        display: none;
+    }
+    .xyuasd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copocart1{
+        display: none;
+    }
+    .copocart{
+        width: 100%;
+    }
+    .signup-form{
+        width: 400px;
+    }
+    .close-sign-btn{
+        position: absolute;
+        height: 24px;
+        border-radius: 12px;
+        background-color: black;
+        top: 10px;
+        right: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .signup-form{
+        width: 100%;
+    }
+    .signup-form{
+        padding: 17px 20px 17px 20px;
+    }
+    .signin-btn{
+        height: 35px;
+    }
+}

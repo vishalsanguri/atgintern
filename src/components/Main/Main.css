@@ -1,0 +1,234 @@
+.main-container{
+    position: relative;
+}
+.main-content{
+    margin-top: 72px;
+}
+.rectangle-2{
+    width: 100%;
+    position: relative;
+    height: 440px;
+    background: url("../Assests/images/Rectangle\ 2.png") no-repeat;
+    filter: contrast(.8);
+    background-size: 100% 100%;
+}
+.join-button{
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: center;
+    border: 1px solid white;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    right: 25px;
+}
+.image-text{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+.content-below-img{
+    padding: 20px 100px;
+}
+.options-main{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    color: #8A8A8A;
+    column-gap: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    height: 56px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    position: relative;
+    /* background-color: pink; */
+}
+.black-option{
+    height: 100%;
+    color: black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.post-join-btn{
+    position: absolute;
+    margin: 13px 0px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    right: 0;
+    height: 30px;
+    top: 0;
+
+}
+.btn-1{
+    background: #EDEEF0;
+    padding: 0px 5px;
+    display: flex;
+    font-weight: 700;
+    color: black;
+    font-size: 15px;
+    justify-content: center;
+    column-gap: 7px ;
+    border-radius: 4px;
+    align-items: center;
+    height: 100%;
+}
+.btn-2-log{
+    background: #FFFFFF;
+border: 0.8px solid #989899;
+box-sizing: border-box;
+border-radius: 4px;
+    display: flex;
+    padding: 0px 5px;border-radius: 4px;
+    column-gap: 7px ;
+    font-weight: 900;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn-2{
+    background: #2F6CE5;
+    display: flex;
+    color: #6A6A6B;
+    padding: 0px 5px;border-radius: 4px;
+    column-gap: 7px ;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.divison-container{
+    display: flex;
+    margin: 20px 0px;
+}
+.posts-division{
+    width: 70%;
+    display: flex;
+    padding-right: 30px;
+    flex-direction: column;
+}
+.groups-division{
+    width: 30%;
+}
+.location-division{
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+    justify-content: space-between;
+}
+.location-division input{
+    border: none;
+    text-align: center;
+}
+.notice-division{
+        padding: 15px 0px;
+        font-weight: normal;
+        display: flex;
+        column-gap: 10px ;
+        font-size: 14px;
+}
+.recommended-groups{
+    display: flex;
+    flex-direction: column;
+}
+.recommended-single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    margin: 10px 0px;
+}
+.follow-btn{
+    background: #EDEEF0;
+    border-radius: 14px;
+    user-select: none;
+    cursor: pointer;
+    padding: 2px 9px;
+}
+.inputselect:focus{
+    outline:none;      
+    color:aqua; 
+    cursor: pointer; 
+}
+.options-main-mobile{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.filter-all-btn{
+    height: 32px;
+    width: 106px;
+    background: #F1F3F5;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0px 5px;
+border-radius: 4px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .rectangle-2{
+        height: 300px;
+    }
+}
+@media screen and (max-width:800px) {
+    .main-content{
+        margin-top: 24px;
+    }
+    .image-text{
+        font-size: 29px;
+    }
+    .join-button{
+        visibility: visible;
+    }
+    .options-main{
+        display: none;
+    }
+    .options-main-mobile{
+        display: flex;
+    }
+    .groups-division{
+        display: none;
+    }
+    .posts-division{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .rectangle-2{
+        height: 260px;
+    }
+}
+@media screen and (max-width:500px){
+    .content-below-img{
+        padding: 20px 0px;
+    }
+    .image-text{
+        font-size: 20px;
+    }
+    .rectangle-2{
+        height: 180px;
+    }
+}

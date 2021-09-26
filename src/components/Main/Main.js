@@ -17,7 +17,6 @@ import Signin from "../Signup/Signin";
 import Signup from "../Signup/Signup";
 
 export default function Main() {
-  const [display, setDisplay] = useState(false);
   const [sign, setSign] = useState(false);
   const [personLogged, setPersonLogged] = useState(false);
   const [userInfo, setUserInfo] = useState({ firstname: "", lastname: "" });

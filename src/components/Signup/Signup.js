@@ -18,7 +18,6 @@ export default function Signup({
     location: "",
     cpassword: "",
   });
-  const [registersucess, setRegistersucess] = useState({ ok: false });
   function setData(e) {
     var name = e.target.name;
     var value = e.target.value;
